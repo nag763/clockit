@@ -1,0 +1,19 @@
+[package]
+name = "clockit"
+version = "0.1.0"
+description = "A simple cli tool to organize your everyday tasks"
+homepage = "https://github.com/nag763/clockit"
+repository = "https://github.com/nag763/clockit"
+readme = "README.md"
+authors = ["Loïc L"]
+keywords = ["schedule", "tasks", "cli", "time"]
+categories = ["command-line-interface"]
+edition = "2018"
+
+[dependencies]
+clap = { version = "2.3.3", features = ["yaml"] }
+chrono = "0.4.19"
+diesel = { version = "1.4.4", features = ["sqlite"] }
+dotenv = "0.15.0"
+console = "0.13.0"
+prettytable-rs = "0.8.0"

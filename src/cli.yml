@@ -1,0 +1,39 @@
+name: clockit
+version: "1.0"
+author: Loic
+about: Time your tasks via the cli
+args:
+    - start:
+        short: s
+        long: start
+        help: Starts a new task with the given label
+    - show:
+        long : show
+        help: Show all task
+    - running:
+        short: r
+        long: running
+        help: Displays current running tasks     
+    - pause:
+        short: p
+        long: pause
+        help: Pause current running task
+    - end:
+        short: e
+        long: end
+        help: End task with given label
+    - create:
+        short: c
+        long: create
+        help: Create only the given task name without starting it
+    - clean:
+        long: clean
+        help: Delete tasks that are ended
+    - delete:
+        short: d
+        long: delete
+        help: Delete tasks with the given name
+    - TASKNAME:
+        help: Sets the label of the task
+        required: false
+        index: 1
