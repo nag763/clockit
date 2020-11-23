@@ -1,3 +1,5 @@
+![Licence](https://img.shields.io/bower/l/bootstrap)![Statut](https://img.shields.io/badge/statut-in%20development-red)
+
 # clockit 0.10.0
 
 A simple tool to time your tasks from your cli
@@ -5,11 +7,11 @@ A simple tool to time your tasks from your cli
 ## TODO List
 
 - [ ] Organise code
-
 - [ ] Create tests for the models and libs
-- [ ] Documentate better rust code
+- [ ] Document better rust code
 - [ ] Write user notice
 - [ ] Add a simple gif demo on this repository
+- [ ] Facilitate diesel install
 
 ## Known issues
 
