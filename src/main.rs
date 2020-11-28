@@ -21,7 +21,7 @@ fn main() {
 
         let input : &str = matches.value_of("TASKNAME").unwrap();
 
-        if matches.is_present("start") {
+        if matches.is_present("start"){
             if task_exists(&connection, input) {
                 let task = get_task(&connection, input).unwrap();
                 if task.state.to_char() == State::Created.to_char() || task.state.to_char() == State::Paused.to_char() {
@@ -72,8 +72,16 @@ fn main() {
                 Ok(_) => println!("{} deleted", input),
                 Err(t) => println!("Error : {}", t),
             }
-        }
+        } 
 
+        if matches.is_present("create"){
+            if task_exists(&connection, input) {
+                println!("{} already exists", input);
+            }else{
+                create_task(&connection, input);
+                println!("{} created", input);
+            }
+        }
     }
 
     if matches.is_present("show") {

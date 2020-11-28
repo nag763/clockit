@@ -7,10 +7,15 @@ A simple tool to time your tasks from your cli
 ## TODO List
 
 - [ ] Organise code
+
 - [ ] Create tests for the models and libs
+
 - [ ] Document better rust code
+
 - [ ] Write user notice
+
 - [ ] Add a simple gif demo on this repository
+
 - [ ] Facilitate diesel install
 
 ## Known issues

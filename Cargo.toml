@@ -1,6 +1,6 @@
 [package]
 name = "clockit"
-version = "0.1.0"
+version = "0.1.1"
 description = "A simple cli tool to organize your everyday tasks"
 homepage = "https://github.com/nag763/clockit"
 repository = "https://github.com/nag763/clockit"
